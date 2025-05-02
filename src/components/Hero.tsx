@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
-              className="bg-white text-fence-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold"
+              className="bg-fence-wood text-white hover:bg-fence-wood/90 text-lg px-8 py-6 font-semibold"
               onClick={() => {
                 const servicesSection = document.getElementById('services');
                 if (servicesSection) {
@@ -41,7 +41,7 @@ const Hero = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 font-semibold flex items-center gap-2"
+              className="border-white text-white hover:bg-white/20 text-lg px-8 py-6 font-semibold flex items-center gap-2"
               onClick={scrollToContact}
             >
               Get Free Estimate <ArrowRight className="h-5 w-5" />
