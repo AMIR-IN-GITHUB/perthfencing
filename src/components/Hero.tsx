@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-fence-700 to-fence-600">
       {/* Background image with overlay */}
@@ -21,10 +28,22 @@ const Hero = () => {
             Superior Fence Creations provides expert fence installation, repair, and maintenance services to residential and commercial clients in Los Angeles and surrounding areas.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-white text-fence-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold">
+            <Button 
+              className="bg-white text-fence-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold"
+              onClick={() => {
+                const servicesSection = document.getElementById('services');
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               Our Services
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 font-semibold flex items-center gap-2">
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 font-semibold flex items-center gap-2"
+              onClick={scrollToContact}
+            >
               Get Free Estimate <ArrowRight className="h-5 w-5" />
             </Button>
           </div>
