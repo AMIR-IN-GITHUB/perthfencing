@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from "lucide-react";
 import { Button } from '@/components/ui/button';
@@ -14,6 +15,24 @@ const services = [
     title: "Commercial Fencing",
     description: "Secure your business property with our durable and professional commercial fencing options.",
     image: "https://images.unsplash.com/photo-1571144805458-42c226117c9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 3,
+    title: "Aluminum Slats",
+    description: "Modern and sleek aluminum slat fencing that provides excellent privacy and contemporary appeal.",
+    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 4,
+    title: "Color Bond Fence",
+    description: "Durable and stylish color bond fencing available in various colors to match your property's aesthetic.",
+    image: "https://images.unsplash.com/photo-1606744888344-493238951221?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 5,
+    title: "Gates",
+    description: "Custom gate installation and repair services for residential and commercial properties.",
+    image: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     id: 6,
