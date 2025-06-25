@@ -1,4 +1,5 @@
 
+
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from "lucide-react";
 import { Button } from '@/components/ui/button';
@@ -24,7 +25,7 @@ const services = [
   },
   {
     id: 4,
-    title: "Color Bond Fence",
+    title: "Colorbond Fence",
     description: "Durable and stylish color bond fencing available in various colors to match your property's aesthetic.",
     image: "https://images.unsplash.com/photo-1606744888344-493238951221?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
