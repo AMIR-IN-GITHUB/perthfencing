@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from "lucide-react";
 import { Button } from '@/components/ui/button';
@@ -15,24 +14,6 @@ const services = [
     title: "Commercial Fencing",
     description: "Secure your business property with our durable and professional commercial fencing options.",
     image: "https://images.unsplash.com/photo-1571144805458-42c226117c9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: 3,
-    title: "Vinyl Fencing",
-    description: "Low-maintenance, durable vinyl fencing in a variety of styles and colors to complement your property.",
-    image: "https://images.unsplash.com/photo-1533470192478-9897d127e774?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: 4,
-    title: "Wood Fencing",
-    description: "Classic wood fencing options that provide natural beauty and can be customized to your specifications.",
-    image: "https://images.unsplash.com/photo-1601982052115-130cbd249354?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: 5,
-    title: "Chain Link Fencing",
-    description: "Affordable and versatile chain link fencing perfect for security and boundary marking.",
-    image: "https://images.unsplash.com/photo-1553114110-92447a86a88e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
   },
   {
     id: 6,
