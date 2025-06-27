@@ -2,42 +2,30 @@
 import { useState, useEffect, useRef } from 'react';
 
 const projects = [
-  {
-    id: 1,
-    title: "Modern Wood Fence",
-    category: "Residential",
-    image: "https://images.unsplash.com/photo-1598982570917-efa18621ec3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 2,
-    title: "Commercial Security Fence",
-    category: "Commercial",
-    image: "https://images.unsplash.com/photo-1600696490731-ecf260e133c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 3,
-    title: "Privacy Vinyl Fence",
-    category: "Residential",
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 4,
-    title: "Decorative Metal Fence",
-    category: "Custom",
-    image: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 5,
-    title: "Ranch Property Fence",
-    category: "Commercial",
-    image: "https://images.unsplash.com/photo-1549888834-3ec93abae044?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 6,
-    title: "Modern Home Fence",
-    category: "Residential",
-    image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-  }
+  { id: 1, title: "Fence Photo 1", category: "Gallery", image: "/images/photo_1_2025-06-27_15-53-18.jpg" },
+  { id: 2, title: "Fence Photo 2", category: "Gallery", image: "/images/photo_2_2025-06-27_15-53-18.jpg" },
+  { id: 3, title: "Fence Photo 3", category: "Gallery", image: "/images/photo_3_2025-06-27_15-53-18.jpg" },
+  { id: 4, title: "Fence Photo 4", category: "Gallery", image: "/images/photo_4_2025-06-27_15-53-18.jpg" },
+  { id: 5, title: "Fence Photo 5", category: "Gallery", image: "/images/photo_5_2025-06-27_15-53-18.jpg" },
+  { id: 6, title: "Fence Photo 6", category: "Gallery", image: "/images/photo_6_2025-06-27_15-53-18.jpg" },
+  { id: 7, title: "Fence Photo 7", category: "Gallery", image: "/images/photo_7_2025-06-27_15-53-18.jpg" },
+  { id: 8, title: "Fence Photo 8", category: "Gallery", image: "/images/photo_8_2025-06-27_15-53-18.jpg" },
+  { id: 9, title: "Fence Photo 9", category: "Gallery", image: "/images/photo_9_2025-06-27_15-53-18.jpg" },
+  { id: 10, title: "Fence Photo 10", category: "Gallery", image: "/images/photo_10_2025-06-27_15-53-18.jpg" },
+  { id: 11, title: "Fence Photo 11", category: "Gallery", image: "/images/photo_11_2025-06-27_15-53-18.jpg" },
+  { id: 12, title: "Fence Photo 12", category: "Gallery", image: "/images/photo_12_2025-06-27_15-53-18.jpg" },
+  { id: 13, title: "Fence Photo 13", category: "Gallery", image: "/images/photo_13_2025-06-27_15-53-18.jpg" },
+  { id: 14, title: "Fence Photo 14", category: "Gallery", image: "/images/photo_14_2025-06-27_15-53-18.jpg" },
+  { id: 15, title: "Fence Photo 15", category: "Gallery", image: "/images/photo_15_2025-06-27_15-53-18.jpg" },
+  { id: 16, title: "Fence Photo 16", category: "Gallery", image: "/images/photo_16_2025-06-27_15-53-18.jpg" },
+  { id: 17, title: "Fence Photo 17", category: "Gallery", image: "/images/photo_17_2025-06-27_15-53-18.jpg" },
+  { id: 18, title: "Fence Photo 18", category: "Gallery", image: "/images/photo_18_2025-06-27_15-53-18.jpg" },
+  { id: 19, title: "Fence Photo 19", category: "Gallery", image: "/images/photo_19_2025-06-27_15-53-18.jpg" },
+  { id: 20, title: "Fence Photo 20", category: "Gallery", image: "/images/photo_20_2025-06-27_15-53-18.jpg" },
+  { id: 21, title: "Fence Photo 21", category: "Gallery", image: "/images/photo_21_2025-06-27_15-53-18.jpg" },
+  { id: 22, title: "Fence Photo 22", category: "Gallery", image: "/images/photo_22_2025-06-27_15-53-18.jpg" },
+  { id: 23, title: "Fence Photo 23", category: "Gallery", image: "/images/photo_23_2025-06-27_15-53-18.jpg" },
+  { id: 24, title: "Fence Photo 24", category: "Gallery", image: "/images/photo_24_2025-06-27_15-53-18.jpg" }
 ];
 
 const Gallery = () => {
