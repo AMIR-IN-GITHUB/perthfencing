@@ -1,4 +1,3 @@
-
 import { Fence } from "lucide-react";
 
 const Footer = () => {
@@ -12,8 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <Fence className="h-8 w-8 text-white mr-2" />
-              <span className="text-xl font-bold">Superior Fence Creations</span>
+              <img src="/images/logo1.jpg" alt="Logo" className="h-10 w-auto object-contain rounded" />
             </div>
             <p className="text-gray-300 mb-6">
               Quality fencing solutions for residential and commercial properties in Perth and surrounding areas.
@@ -54,12 +52,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Residential Fencing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Commercial Fencing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Vinyl Fencing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Wood Fencing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Chain Link Fencing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Fence Repair</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Residential Fencing</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Commercial Fencing</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Aluminum Slats</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Colorbond Fence</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Gates</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Fence Repair</a></li>
             </ul>
           </div>
           

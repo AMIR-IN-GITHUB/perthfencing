@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Fence, Phone } from "lucide-react";
@@ -22,14 +21,11 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white shadow-md py-2"
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Fence className="h-8 w-8 text-fence-600 mr-2" />
-          <span className="text-xl font-bold text-fence-600">Superior Fence Creations</span>
+          <img src="/images/logo1.jpg" alt="Logo" className="h-10 w-auto object-contain rounded" />
         </div>
         
         {/* Desktop Menu */}
