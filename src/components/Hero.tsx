@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -25,7 +24,7 @@ const Hero = () => {
             Quality Fencing Solutions for Your Property
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8">
-            Superior Fence Creations provides expert fence installation, repair, and maintenance services to residential and commercial clients in Los Angeles and surrounding areas.
+            Perth Fencing WA provides expert fence installation, repair, and maintenance services to residential and commercial clients in Perth and surrounding areas.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
