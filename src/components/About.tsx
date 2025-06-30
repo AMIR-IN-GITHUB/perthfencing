@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { CheckCircle } from "lucide-react";
 
@@ -51,7 +50,7 @@ const About = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-fence-700">About Superior Fence Creations</h2>
             <p className="text-lg text-gray-600 mb-6">
-              With over 10 years of experience serving the Los Angeles area, Superior Fence Creations has established itself as a trusted provider of high-quality fencing solutions for residential and commercial properties.
+              With over 10 years of experience serving the Perth area, Superior Fence Creations has established itself as a trusted provider of high-quality fencing solutions for residential and commercial properties.
             </p>
             <p className="text-lg text-gray-600 mb-8">
               Our team of skilled professionals is dedicated to delivering exceptional craftsmanship, using premium materials, and providing outstanding customer service from project start to finish.

@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect, useRef } from 'react';
 import { ArrowRight } from "lucide-react";
 import { Button } from '@/components/ui/button';
@@ -82,13 +80,6 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.id} className="service-card bg-white rounded-lg overflow-hidden shadow-md">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3 text-fence-600">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>

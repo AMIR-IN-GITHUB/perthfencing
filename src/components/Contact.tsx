@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -135,9 +134,9 @@ const Contact = () => {
                     <option value="">Select a Service</option>
                     <option value="Residential Fencing">Residential Fencing</option>
                     <option value="Commercial Fencing">Commercial Fencing</option>
-                    <option value="Vinyl Fencing">Vinyl Fencing</option>
-                    <option value="Wood Fencing">Wood Fencing</option>
-                    <option value="Chain Link Fencing">Chain Link Fencing</option>
+                    <option value="Aluminum Slats">Aluminum Slats</option>
+                    <option value="Colorbond Fence">Colorbond Fence</option>
+                    <option value="Gates">Gates</option>
                     <option value="Fence Repair">Fence Repair</option>
                     <option value="Other">Other</option>
                   </select>

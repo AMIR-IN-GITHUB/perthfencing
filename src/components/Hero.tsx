@@ -10,20 +10,20 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-fence-700 to-fence-600">
+    <section id="home" className="relative h-screen flex items-center justify-center">
       {/* Background image with overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center z-0 opacity-20"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1563287240-c9879e6b3541?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80')" }}
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('/images/photo_1_2025-06-27_15-53-18.jpg')" }}
       ></div>
       
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <div className="max-w-3xl mx-auto flex flex-col items-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">
             Quality Fencing Solutions for Your Property
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8">
+          <p className="text-lg md:text-xl text-white/95 mb-8 font-semibold drop-shadow-md">
             Perth Fencing WA provides expert fence installation, repair, and maintenance services to residential and commercial clients in Perth and surrounding areas.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">

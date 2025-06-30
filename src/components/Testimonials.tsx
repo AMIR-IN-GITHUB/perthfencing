@@ -1,34 +1,33 @@
-
 import { useState, useEffect, useRef } from 'react';
 
 const testimonials = [
   {
     id: 1,
-    name: "Michael Rodriguez",
-    position: "Homeowner",
-    testimonial: "Superior Fence Creations installed a beautiful wood fence around my property. Their team was professional, efficient, and the quality of work exceeded my expectations. Highly recommend!",
+    name: "David Sama",
+    position: "",
+    testimonial: "Amazing! We had a new 28 metre fence quickly, priced well and great quality. Thank you!",
     rating: 5,
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    position: "Property Manager",
-    testimonial: "We hired Superior Fence Creations for a large commercial fencing project. They were reliable, detail-oriented, and completed the project on time and within budget. Great company to work with.",
+    name: "Xinmei Zhang",
+    position: "",
+    testimonial: "I had great experience working with Jeff and the team. The limestone fence was built with good quality and look beautiful. They are professional and efficient. The work was completed on time and budget.",
     rating: 5,
   },
   {
     id: 3,
-    name: "David Thompson",
-    position: "Homeowner",
-    testimonial: "The vinyl fence installed by Superior Fence Creations looks fantastic and has significantly improved our home's curb appeal. Their customer service was excellent from start to finish.",
+    name: "ADRIAN HSU",
+    position: "",
+    testimonial: "Add slat fencing with security gate for garage. Great workmanship. Looks nice. Highly recommend.",
     rating: 5,
   },
   {
     id: 4,
-    name: "Lisa Martin",
-    position: "Business Owner",
-    testimonial: "Superior Fence Creations provided us with a secure and attractive chain-link fence for our business property. Professional service and quality materials at a reasonable price.",
-    rating: 4,
+    name: "Green code Media",
+    position: "",
+    testimonial: "Perth Fencing did a great job. They were easy to talk to, came on time, and finished everything pretty quickly. The fence looks clean and strong, exactly how I wanted it. No hidden costs or drama—just simple and smooth.",
+    rating: 5,
   },
 ];
 
