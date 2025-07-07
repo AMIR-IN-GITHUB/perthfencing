@@ -11,7 +11,9 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <img src="/images/logo1.jpg" alt="Logo" className="h-10 w-auto object-contain rounded" />
+              <div className="bg-white rounded-lg p-1 flex items-center justify-center" style={{ width: 96, height: 96 }}>
+                <img src="/images/logo3.png" alt="Logo" className="h-24 w-24 object-contain" />
+              </div>
             </div>
             <p className="text-gray-300 mb-6">
               Quality fencing solutions for residential and commercial properties in Perth and surrounding areas.

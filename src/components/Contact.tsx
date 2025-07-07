@@ -8,14 +8,6 @@ import { toast } from "@/components/ui/use-toast";
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,34 +31,6 @@ const Contact = () => {
     };
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Quote Request Sent",
-        description: "Thank you! We'll contact you shortly with a free estimate.",
-      });
-      
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-      
-      setIsSubmitting(false);
-    }, 1500);
-  };
-
   return (
     <section id="contact" ref={sectionRef} className={`py-20 ${isVisible ? 'fade-in-section is-visible' : 'fade-in-section'}`}>
       <div className="container mx-auto px-4">
@@ -81,15 +45,13 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-white rounded-xl shadow-lg p-8">
             <h3 className="text-2xl font-bold mb-6 text-fence-700">Request a Free Estimate</h3>
-            <form onSubmit={handleSubmit}>
+            <form action="https://formspree.io/f/yourFormID" method="POST">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name *</label>
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     className="w-full"
                   />
@@ -100,8 +62,6 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className="w-full"
                   />
@@ -115,8 +75,6 @@ const Contact = () => {
                     id="phone"
                     name="phone"
                     type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
                     required
                     className="w-full"
                   />
@@ -126,8 +84,6 @@ const Contact = () => {
                   <select
                     id="service"
                     name="service"
-                    value={formData.service}
-                    onChange={handleChange}
                     required
                     className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
@@ -148,8 +104,6 @@ const Contact = () => {
                 <Textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows={4}
                   className="w-full"
@@ -160,9 +114,8 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 className="w-full bg-fence-600 hover:bg-fence-700 text-white py-6"
-                disabled={isSubmitting}
               >
-                {isSubmitting ? 'Sending...' : 'Submit Request'}
+                Submit Request
               </Button>
             </form>
           </div>
